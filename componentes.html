@@ -1,11 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kit de Componentes | Rueda Nocturna</title>
+  <link rel="stylesheet" href="./src/output.css">
 </head>
-<body>
-    
+<body class="bg-slate-100 p-8 dark:bg-slate-900">
+
+  <main class="max-w-3xl mx-auto space-y-12">
+    <h1 class="text-3xl font-bold text-noche dark:text-farol border-b pb-4 border-slate-300 dark:border-slate-700">Kit de Componentes</h1>
+
+    <!-- BOTONES -->
+    <section>
+      <h2 class="text-xl font-bold mb-4 dark:text-white">1. Botones</h2>
+      <div class="flex gap-4">
+        <a href="#" class="bg-farol text-noche px-6 py-3 rounded-full font-bold hover:bg-yellow-300 focus:ring-4 focus:ring-farol/50 focus:outline-none transition-colors">Principal</a>
+        <a href="#" class="bg-slate-800 text-white px-6 py-3 rounded-full font-bold hover:bg-slate-700 focus:ring-4 focus:ring-slate-500/50 focus:outline-none transition-colors">Secundario</a>
+        <a href="#" class="border-2 border-farol text-farol px-6 py-3 rounded-full font-bold hover:bg-farol hover:text-noche focus:ring-4 focus:ring-farol/50 focus:outline-none transition-colors">Contorno</a>
+      </div>
+    </section>
+
+    <!-- ALERTAS -->
+    <section>
+      <h2 class="text-xl font-bold mb-4 dark:text-white">2. Alertas</h2>
+      <div class="space-y-3">
+        <div class="bg-blue-100 border-l-4 border-blue-500 p-4 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300">
+          <p class="font-bold">Información</p>
+          <p class="text-sm">Recuerda traer tu documento.</p>
+        </div>
+        <div role="alert" class="bg-emerald-100 border-l-4 border-emerald-500 p-4 text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">
+          <p class="font-bold">¡Éxito!</p>
+          <p class="text-sm">Inscripción completada.</p>
+        </div>
+        <div class="bg-amber-100 border-l-4 border-amber-500 p-4 text-amber-800 dark:bg-amber-900/30 dark:text-amber-300">
+          <p class="font-bold">Advertencia</p>
+          <p class="text-sm">Puede llover en la ruta.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMULARIO -->
+    <section>
+      <h2 class="text-xl font-bold mb-4 dark:text-white">3. Formulario</h2>
+      <div class="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-sm space-y-4">
+        <div>
+          <label for="email" class="block text-sm font-bold mb-1 dark:text-slate-300">Correo Electrónico</label>
+          <input type="email" id="email" placeholder="ejemplo@correo.com" class="w-full border border-slate-300 dark:border-slate-600 dark:bg-slate-700 p-3 rounded-lg focus:ring-2 focus:ring-farol focus:outline-none dark:text-white">
+          <p class="text-xs text-slate-500 mt-1">Texto de ayuda para el correo.</p>
+        </div>
+        <div>
+          <label for="tel" class="block text-sm font-bold mb-1 dark:text-slate-300">Celular</label>
+          <input type="tel" id="tel" placeholder="3001234567" class="w-full border border-slate-300 dark:border-slate-600 dark:bg-slate-700 p-3 rounded-lg focus:ring-2 focus:ring-farol focus:outline-none dark:text-white">
+          <p class="text-xs text-slate-500 mt-1">Texto de ayuda para el celular.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
 </body>
 </html>

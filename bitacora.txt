@@ -1,0 +1,36 @@
+================================================================
+TAILWIND CSS
+================================================================
+
+--- 1. DIFERENCIA ENTRE BOOTSTRAP Y TAILWIND (Botón) ---
+En la semana 2 (Bootstrap), el botón se creó así:
+<a class="btn btn-primary">Inscríbete</a>
+Donde "btn" y "btn-primary" son componentes pre-armados.
+
+En la semana 3 (Tailwind), el mismo botón se creó así:
+<a class="bg-farol text-noche px-6 py-3 rounded-full font-bold hover:bg-yellow-300 focus:ring-4 transition-colors">Inscríbete</a>
+Diferencia clave: Bootstrap es "component-first" (te da el botón hecho). Tailwind es "utility-first" (te da utilidades de CSS para que TÚ armes el botón combinando clases).
+
+--- 2. ¿POR QUÉ UNA CLASE QUE NO USO NO APARECE EN output.css? ---
+Tailwind escanea el HTML (usando la CLI). Si en el HTML yo no escribí "bg-pink-500", Tailwind no la incluye en el archivo final. Esto se llama "Purge" o "JIT" (Just-In-Time), y hace que el CSS pese poquísimo, solo con lo necesario.
+
+--- 3. JUSTIFICACIÓN GRID VS FLEX ---
+- Header y Footer: Se usó FLEX (flex-row) porque es una distribución en una sola dimensión (elementos alineados horizontalmente con space-between).
+- Rutas y Pasos: Se usó GRID (grid-cols-1 md:grid-cols-2 lg:grid-cols-3) porque es bidimensional; necesitamos controlar filas y columnas exactas.
+
+--- 4. REGLAS DEL KIT DE COMPONENTES ---
+- Bordes: rounded-2xl para tarjetas y rounded-full para botones.
+- Espaciado: padding p-6 en tarjetas, gap-6 o gap-8 en grids.
+- Colores: Texto principal en text-noche (claro) / text-white (oscuro). Fondos de tarjetas en bg-white (claro) / bg-slate-800 (oscuro).
+
+--- 5. PRUEBAS RESPONSIVE (Mobile-First) ---
+| Ancho | Header | Rutas | Pasos |
+| 360px | Apilado, menú oculto | 1 columna | 1 columna |
+| 768px | En fila, menú oculto | 2 columnas | 2 columnas |
+| 1024px | En fila, menú visible | 3 columnas | 4 columnas |
+| 1280px | En fila, menú visible | 3 columnas | 4 columnas |
+
+--- 6. CONTRASTE EN MODO OSCURO ---
+- Amarillo Farol (#FFD166) sobre Azul Noche (#14213D): 7.22:1 (Apto).
+- Blanco (#FFFFFF) sobre Azul Noche (#14213D): 15.98:1 (Apto).
+- Verde Ruta (#1E7A4F) sobre Azul Noche: 2.7:1 (No apto para texto normal). Por eso en modo oscuro el texto resaltado usa Amarillo Farol en lugar de Verde Ruta.
