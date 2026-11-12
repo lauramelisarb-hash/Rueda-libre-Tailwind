@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colores de la marca */
+  --color-farol: #FFD166;
+  --color-noche: #14213D;
+  --color-crema: #FAF6EF;
+  --color-ruta: #1E7A4F;
+  
+  /* Fuentes (Opcional, pero el reto las pide) */
+  --font-display: "Montserrat", sans-serif;
+}

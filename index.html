@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rueda Nocturna · Kit</title>
+  <!-- Enlazamos el CSS que generó la CLI -->
+  <link rel="stylesheet" href="./src/output.css">
+</head>
+<body class="bg-slate-900 text-white min-h-screen p-8">
+
+  <main class="max-w-4xl mx-auto space-y-12">
+
+    <!-- SECCIÓN 1: BOTONES (MiniReto 2) -->
+    <section>
+      <h2 class="text-3xl font-bold mb-6 text-yellow-400">Kit de Botones</h2>
+      <div class="flex gap-4">
+        <!-- Principal -->
+        <a href="#" class="bg-yellow-400 text-slate-900 px-6 py-3 rounded-full font-bold hover:bg-yellow-300 focus:ring-4 focus:ring-yellow-400/50 focus:outline-none transition-colors">
+          Inscríbete
+        </a>
+        <!-- Secundario -->
+        <a href="#" class="bg-slate-700 text-white px-6 py-3 rounded-full font-bold hover:bg-slate-600 focus:ring-4 focus:ring-slate-500/50 focus:outline-none transition-colors">
+          Ver más
+        </a>
+        <!-- Contorno -->
+        <a href="#" class="border-2 border-yellow-400 text-yellow-400 px-6 py-3 rounded-full font-bold hover:bg-yellow-400 hover:text-slate-900 focus:ring-4 focus:ring-yellow-400/50 focus:outline-none transition-colors">
+          Contacto
+        </a>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 2: RUTAS (MiniReto 3) -->
+    <section>
+      <h2 class="text-3xl font-bold mb-6 text-yellow-400">Rutas Nocturnas</h2>
+      
+      <!-- Contenedor de las tarjetas (por ahora una debajo de otra) -->
+      <div class="space-y-6">
+
+        <!-- CARD 1: Fácil -->
+        <article class="bg-slate-800 border border-slate-700 rounded-xl overflow-hidden hover:shadow-xl hover:shadow-yellow-400/10 hover:border-yellow-400 transition-all">
+          <!-- Imagen de prueba -->
+          <img src="https://placehold.co/800x300/1e293b/FFD166?text=Ruta+Centro" alt="Luces del Centro" class="w-full h-48 object-cover">
+          
+          <div class="p-6">
+            <!-- Etiqueta de nivel -->
+            <span class="inline-block bg-emerald-900 text-emerald-300 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-4">
+              Fácil
+            </span>
+            
+            <h3 class="text-2xl font-bold mb-4">Luces del Centro</h3>
+            
+            <!-- Datos jerarquizados -->
+            <ul class="space-y-2 mb-6">
+              <li class="flex justify-between border-b border-slate-700 pb-2">
+                <span class="text-slate-400 text-sm">Distancia</span>
+                <span class="font-semibold">10 km</span>
+              </li>
+              <li class="flex justify-between border-b border-slate-700 pb-2">
+                <span class="text-slate-400 text-sm">Duración</span>
+                <span class="font-semibold">2 h</span>
+              </li>
+              <li class="flex justify-between">
+                <span class="text-slate-400 text-sm">Encuentro</span>
+                <span class="font-semibold">Sede Rueda Libre</span>
+              </li>
+            </ul>
+
+            <!-- Precio y Botón -->
+            <div class="flex items-center justify-between mt-auto">
+              <p class="text-2xl font-bold text-yellow-400">$55.000</p>
+              <a href="#" class="bg-yellow-400 text-slate-900 px-6 py-2 rounded-full font-bold hover:bg-yellow-300 focus:ring-4 focus:ring-yellow-400/50 focus:outline-none transition-colors">
+                Inscríbete
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 2: Medio -->
+        <article class="bg-slate-800 border border-slate-700 rounded-xl overflow-hidden hover:shadow-xl hover:shadow-yellow-400/10 hover:border-yellow-400 transition-all">
+          <img src="https://placehold.co/800x300/1e293b/FFD166?text=Miradores" alt="Miradores de la Ciudad" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <span class="inline-block bg-amber-900 text-amber-300 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-4">
+              Medio
+            </span>
+            <h3 class="text-2xl font-bold mb-4">Miradores de la Ciudad</h3>
+            <ul class="space-y-2 mb-6">
+              <li class="flex justify-between border-b border-slate-700 pb-2">
+                <span class="text-slate-400 text-sm">Distancia</span>
+                <span class="font-semibold">16 km</span>
+              </li>
+              <li class="flex justify-between border-b border-slate-700 pb-2">
+                <span class="text-slate-400 text-sm">Duración</span>
+                <span class="font-semibold">3 h</span>
+              </li>
+              <li class="flex justify-between">
+                <span class="text-slate-400 text-sm">Encuentro</span>
+                <span class="font-semibold">Sede Rueda Libre</span>
+              </li>
+            </ul>
+            <div class="flex items-center justify-between mt-auto">
+              <p class="text-2xl font-bold text-yellow-400">$75.000</p>
+              <a href="#" class="bg-yellow-400 text-slate-900 px-6 py-2 rounded-full font-bold hover:bg-yellow-300 focus:ring-4 focus:ring-yellow-400/50 focus:outline-none transition-colors">
+                Inscríbete
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 3: Difícil -->
+        <article class="bg-slate-800 border border-slate-700 rounded-xl overflow-hidden hover:shadow-xl hover:shadow-yellow-400/10 hover:border-yellow-400 transition-all">
+          <img src="https://placehold.co/800x300/1e293b/FFD166?text=Las+Palmas" alt="Luna en Las Palmas" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <span class="inline-block bg-rose-900 text-rose-300 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-4">
+              Difícil
+            </span>
+            <h3 class="text-2xl font-bold mb-4">Luna en Las Palmas</h3>
+            <ul class="space-y-2 mb-6">
+              <li class="flex justify-between border-b border-slate-700 pb-2">
+                <span class="text-slate-400 text-sm">Distancia</span>
+                <span class="font-semibold">22 km</span>
+              </li>
+              <li class="flex justify-between border-b border-slate-700 pb-2">
+                <span class="text-slate-400 text-sm">Duración</span>
+                <span class="font-semibold">3,5 h</span>
+              </li>
+              <li class="flex justify-between">
+                <span class="text-slate-400 text-sm">Encuentro</span>
+                <span class="font-semibold">Sede Rueda Libre</span>
+              </li>
+            </ul>
+            <div class="flex items-center justify-between mt-auto">
+              <p class="text-2xl font-bold text-yellow-400">$95.000</p>
+              <a href="#" class="bg-yellow-400 text-slate-900 px-6 py-2 rounded-full font-bold hover:bg-yellow-300 focus:ring-4 focus:ring-yellow-400/50 focus:outline-none transition-colors">
+                Inscríbete
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
